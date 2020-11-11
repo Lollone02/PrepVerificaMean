@@ -1,0 +1,11 @@
+<html>
+  <title>NSF</title>
+  <h1>Negozio Super Fantastico</h1>
+  <button type = "button" (click)="visuaLista()">Lista dei prodotti fantastici</button>
+  <ul *ngFor = "let l of results">
+    <li>Nome prodotto:{{l.product_name}} </li>
+    <li>Fornitore: {{l.supplier}}</li>
+    <li>Quantità: {{l.quantity}}</li>
+    <li>Costo unitario: {{l.unit_cost}}</li>
+  </ul>
+</html>
